@@ -1,0 +1,88 @@
+img {
+  width: 270px;
+  height: 215px;
+  margin-bottom: 27px;
+}
+
+.cell {
+  display: inline-block;
+  width: 50%;
+}
+
+.card-section {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  text-align: left;
+  font-size: 16px;
+
+  h4 {
+    color: $primary-color;
+    padding-top: 20px;
+    font-weight: 500;
+  }
+
+  p {
+    color: $dark-gray;
+    white-space: pre-line;
+  }
+}
+
+
+.ba-slider-btn {
+  outline: lightsalmon;
+
+  &__top {
+    margin-bottom: 160px;
+  }
+
+  &__bottom {
+
+  }
+
+  &:hover, &:focus {
+    //outline: none;
+    border: 1 solid $primary-color;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+
+  }
+
+  .slick-disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+}
+
+.ba-best-slider__arrows {
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  bottom: 75%;
+  right: 10%;
+  width: 60px;
+  height: 60px;
+}
+
+.button-buy {
+  display: block;
+  width: 120px;
+  height: 40px;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  line-height: 1.25;
+  font-size: 13px;
+  color: $white;
+  background: $primary-color;
+
+  &:hover {
+    color: $primary-color;
+    background: $light-gray;
+    transition: all .2s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
