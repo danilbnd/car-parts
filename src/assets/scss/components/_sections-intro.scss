@@ -1,0 +1,151 @@
+.section-title {
+  width: 100%;
+  padding: 65px 15px 15px;
+  color: $black;
+  line-height: 1.33;
+  font-weight: $global-weight-medium;
+  font-size: 24px;
+  white-space: pre-line;
+  @media screen and (max-width: 480px) {
+    padding: 65px 23px 15px 40px;
+    white-space: initial;
+  }
+  @media screen and (max-width: 768px) {
+    padding: 65px 23px 15px 40px;
+  }
+}
+
+.section-product-name__list {
+  color: $dark-gray;
+  list-style-type: none;
+  margin-bottom: 58px;
+  font-weight: $global-weight-regular;
+  font-size: 16px;
+  margin-right: 50px;
+
+  @media screen and (max-width: 768px) {
+    padding-left: 26px;
+    padding-right: 23px;
+  }
+
+  &--hide {
+    @media (min-width: 768px) and (max-width: 992px) {
+      opacity: 0;
+    }
+  }
+}
+
+.section-product-name__mark {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 280px;
+  height: 70px;
+  padding-top: 36px;
+  margin-bottom: 6px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 280px;
+    background-color: $medium-gray;
+    opacity: 0.75;
+    top: 77px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  &:hover {
+    box-shadow: 0 0 30px 0 rgba(122, 122, 122, 0.28);
+    background-color: $white;
+    width: 330px;
+    height: 90px;
+    padding: 15px 0 20px 29px;
+    margin-left: -28px;
+    color: $primary-color;
+    transition: all .2s ease;
+
+    .arrow-svg-icon{
+      padding-left: -50px;
+    }
+
+    &::before {
+      content: "";
+      display: none;
+    }
+  }
+
+  .section-product-name__count-hide {
+    opacity: 0;
+    transition: all ease 0.8s;
+    width: 100%;
+  }
+
+  p.section-product-name__count-hide:hover {
+    opacity: 0.5;
+    display: block;
+    font-size: 13px;
+    line-height: 1.54;
+    color: $dark-gray;
+
+  }
+  .arrow-svg-icon {
+    width: 6px;
+    height: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
+
+    &:hover {
+      //fill: $primary-color;
+
+      stroke: $white;
+      transition: all .2s ease;
+      display:inline-block;
+      width: 6px;
+      height: 10px;
+      border: 15px solid;
+      border-radius: 50%;
+      //border-color: black yellow black yellow;
+    }
+  }
+}
+
+
+.button {
+  display: block;
+  width: 290px;
+  justify-content: center;
+  text-align: center;
+  margin-left: 35%;
+  padding: 20px;
+  line-height: 1.25;
+  font-size: 16px;
+  color: $primary-color;
+  background: $light-gray;
+
+  &:hover {
+    color: $white;
+    background: $primary-color;
+    transition: all .2s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-left: 30%;
+  }
+  @media screen and(max-width: 480px) {
+    margin-left: 13%;
+  }
+  @media screen and(max-width: 360px) {
+    margin-left: 10%;
+  }
+  @media screen and(max-width: 320px) {
+    margin-left: 5%;
+  }
+}
+
