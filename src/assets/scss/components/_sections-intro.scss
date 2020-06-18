@@ -6,12 +6,12 @@
   font-weight: $global-weight-medium;
   font-size: 24px;
   white-space: pre-line;
+  @media screen and (max-width: 768px) {
+    padding: 65px 23px 15px 40px;
+  }
   @media screen and (max-width: 480px) {
     padding: 65px 23px 15px 40px;
     white-space: initial;
-  }
-  @media screen and (max-width: 768px) {
-    padding: 65px 23px 15px 40px;
   }
 }
 
@@ -46,6 +46,22 @@
   padding-top: 36px;
   margin-bottom: 6px;
   position: relative;
+  @media screen and (max-width: 1025px) {
+    width: 180px;
+  }
+  @media screen and (max-width: 768px) {
+    width: 180px;
+  }
+  @media screen and (max-width: 440px) {
+    width: 280px;
+  }
+  @media screen and (max-width: 376px) {
+    width: 280px;
+  }
+  @media screen and (max-width: 321px) {
+    width: 240px;
+  }
+
 
   &::before {
     content: "";
@@ -55,9 +71,21 @@
     background-color: $medium-gray;
     opacity: 0.75;
     top: 77px;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    @media screen and (max-width: 1025px) {
+      width: 180px;
+    }
+    @media screen and (max-width: 768px) {
+      width: 180px;
+    }
+    @media screen and (max-width: 440px) {
+      width: 280px;
+    }
+    @media screen and (max-width: 376px) {
+      width: 280px;
+    }
+    @media screen and (max-width: 321px) {
+      width: 240px;
+    }
   }
 
   &:hover {
@@ -65,12 +93,27 @@
     background-color: $white;
     width: 330px;
     height: 90px;
-    padding: 15px 0 20px 29px;
+    padding: 18px 0 10px 29px;
     margin-left: -28px;
     color: $primary-color;
     transition: all .2s ease;
+    @media screen and (max-width: 1025px) {
+      width: 240px;
+    }
+    @media (max-width: 768px) {
+      width: 240px;
+    }
+    @media screen and (max-width: 440px) {
+      width: 330px;
+    }
+    @media screen and (max-width: 376px) {
+      width: 330px;
+    }
+    @media screen and (max-width: 321px) {
+      width: 280px;
+    }
 
-    .arrow-svg-icon{
+    .arrow-svg-icon {
       padding-left: -50px;
     }
 
@@ -94,6 +137,7 @@
     color: $dark-gray;
 
   }
+
   .arrow-svg-icon {
     width: 6px;
     height: 10px;
@@ -105,23 +149,21 @@
 
       stroke: $white;
       transition: all .2s ease;
-      display:inline-block;
+      display: inline-block;
       width: 6px;
       height: 10px;
-      border: 15px solid;
+      border: 12px solid;
       border-radius: 50%;
-      //border-color: black yellow black yellow;
     }
   }
 }
-
 
 .button {
   display: block;
   width: 290px;
   justify-content: center;
   text-align: center;
-  margin-left: 35%;
+  margin-left: 40%;
   padding: 20px;
   line-height: 1.25;
   font-size: 16px;
@@ -135,8 +177,11 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   }
 
-  @media screen and (max-width: 768px) {
+  @media (min-width: 768px) and (max-width: 992px) {
     margin-left: 30%;
+  }
+  @media screen and (max-width: 768px) {
+    margin-left: 27%;
   }
   @media screen and(max-width: 480px) {
     margin-left: 13%;
