@@ -9650,7 +9650,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     }]
   });
 });
-var total = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.ba-slider-bottom img').length,
+var total = jquery__WEBPACK_IMPORTED_MODULE_0___default()('.ba-slider-bottom').length,
     rand = Math.floor(Math.random() * total);
 jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
   jquery__WEBPACK_IMPORTED_MODULE_0___default()('.ba-slider-bottom').slick({

@@ -42,7 +42,7 @@ $(document).ready(function () {
         ]
     });
 })
-var total = $('.ba-slider-bottom img').length,
+var total = $('.ba-slider-bottom').length,
     rand = Math.floor( Math.random() * total );
 $(document).ready(function () {
     $('.ba-slider-bottom').slick({
