@@ -10,115 +10,64 @@ window.jQuery = $;
 
 // If you want to pick and choose which modules to include, comment out the above and uncomment
 // the line below
-import './lib/foundation-explicit-pieces';
+// import './lib/foundation-explicit-pieces';
 
 import './lib/slick.min.js';
 
-$('.slider').slick({
-	infinite: true,
-	slidesToShow: 3,
-	slidesToScroll: 1,
-	speed: 200,
-	dots: false,
-	responsive: [
-		{
-			breakpoint: 1024,
-			settings: {
-				slidesToShow: 3,
-				slidesToScroll: 3,
-				infinite: true,
-				dots: false
-			}
-		},
-		{
-			breakpoint: 600,
-			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 2
-			}
-		},
-		{
-			breakpoint: 480,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
-			}
-		}
-	]
-});
-$('.slid').slick({
-	infinite: true,
-	slidesToShow: 3,
-	slidesToScroll: 1,
-	speed: 100,
-	dots: false,
-	responsive: [
-		{
-			breakpoint: 1024,
-			settings: {
-				slidesToShow: 3,
-				slidesToScroll: 3,
-				infinite: true,
-				dots: false
-			}
-		},
-		{
-			breakpoint: 600,
-			settings: {
-				slidesToShow: 2,
-				slidesToScroll: 2
-			}
-		},
-		{
-			breakpoint: 480,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
-			}
-		}
-	]
-});
-
-//
-
-fetch('assets/json/cqnrBctj.json')
-	.then(res => res.json())
-	.then(data =>  data)
-//
-// function setItem({product_id, product_title, product_image_alt, brand_name, price, available, url_direct, rating, rating_count}) {
-// 	console.log(data[0].product_id);
-// }
-// setItem();
-// let data = JSON.parse('assets/json/cqnrBctj.json')
-
-
-
-
-
-
-
-
-
-
-// let bestSlider = $('.ba-section-slider');
-//
-// bestSlider.slick({
-// 	slide: '.ba-offer',
-// 	rows: 0,
-// 	nextArrow: '[data-best-next]',
-// 	prevArrow: '[data-best-prev]',
-// 	infinite: false,
-// 	//dots: true,
-// 	responsive: [
-// 		{
-// 			breakpoint: 1024,
-// 			settings: {
-// 				arrows: false
-// 			}
-// 		}
-//
-// 	 ]
-// });
-//
-
-
+$(document).ready(function () {
+    $('.ba-slider-top').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+})
+var total = $('.ba-slider-bottom img').length,
+    rand = Math.floor( Math.random() * total );
+$(document).ready(function () {
+    $('.ba-slider-bottom').slick({
+        infinite: true,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    });
+})
+    .slickGoTo(rand);
