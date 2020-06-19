@@ -14,6 +14,7 @@ window.jQuery = $;
 
 import './lib/slick.min.js';
 
+
 $(document).ready(function () {
     $('.ba-slider-top').slick({
         infinite: true,
@@ -50,6 +51,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 2000,
+        adaptiveHeight: true,
         responsive: [
             {
                 breakpoint: 1024,

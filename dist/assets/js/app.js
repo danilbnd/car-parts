@@ -9659,6 +9659,7 @@ jquery__WEBPACK_IMPORTED_MODULE_0___default()(document).ready(function () {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 2000,
+    adaptiveHeight: true,
     responsive: [{
       breakpoint: 1024,
       settings: {
